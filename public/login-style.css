@@ -2,16 +2,17 @@
 body{
   padding-top:80px;
   word-wrap:break-word;
-  background: url(./img/musicBackgroundFull.png) no-repeat center;
+  background: url(./img/login.png) no-repeat center;
   background-size: cover;
-  font-family: cursive;
+  font-family: 'Lora', serif;  
   height: 100vh;
 }
 
 h1 {
+  font-family: 'Lora', serif; 
   font-size: 5rem;
   text-align: center;
-  color:black;
+  color:#22318D;
 }
 
 label {
