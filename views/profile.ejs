@@ -54,7 +54,7 @@
           <h2>My List</h2>
           <ol class="messages">
             <% for(var i=0; i<messages.length; i++) {%>
-            <li class="message">
+            <li class="message" data-id="<%= messages[i].id %>">
               <span><%= messages[i].name %></span>
               <span><%= messages[i].msg %></span>
               <!-- <span class="hidden"><%= messages[i].thumbUp %></span>

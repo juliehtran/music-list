@@ -51,17 +51,15 @@ Array.from(thumbDown).forEach(function(element) {
 });
 
 Array.from(trash).forEach(function(element) {
-      element.addEventListener('click', function(){
-        const name = this.parentNode.parentNode.childNodes[1].innerText
-        const msg = this.parentNode.parentNode.childNodes[3].innerText
+      element.addEventListener('click', function(event){
+        const id = event.target.closest(".message").dataset.id
         fetch('trash', {
           method: 'delete',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            'name': name,
-            'msg': msg
+            id: id
           })
         }).then(function (response) {
           window.location.reload()

@@ -1,6 +1,5 @@
 // config/database.js
 module.exports = {
-
-    'url' : "mongodb+srv://<redacted>", 
-    'dbName': 'demo'
+    url: process.env.DATABASE_URL,
+    dbName: 'music-list'
 };
