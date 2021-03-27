@@ -5,7 +5,7 @@
 
 ## Usage
 
-1. run `DATABASE_URL="<your db url here>" npm run start`
+1. run `DATABASE_URL="<your db url here>" npm run start` (or set an environment variable)
 2. Navigate to `localhost:8080`
 
 ## Credit

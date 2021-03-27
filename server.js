@@ -13,11 +13,13 @@ const morgan       = require('morgan');
 const cookieParser = require('cookie-parser');
 const session      = require('express-session');
 
-const configDB = require('./config/database.js');
 const setupRoutes = require('./app/routes.js')
 
 // configuration ===============================================================
-mongoose.connect(configDB.url, { useNewUrlParser: true, useUnifiedTopology: true });
+if (!process.env.DATABASE_URL) {
+    throw "Please set DATABASE_URL in the environment."
+  }
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 require('./config/passport')(passport); // pass passport for configuration
 
