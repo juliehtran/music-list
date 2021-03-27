@@ -12,3 +12,5 @@
 
 Collaborated with Gardner Gang!
 Dashlin, Wade, Brian, Asianna, Tanecia, Ziya
+Modified from Scotch.io's auth tutorial
+
